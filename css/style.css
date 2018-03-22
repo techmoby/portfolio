@@ -1,0 +1,262 @@
+/****** Color Palette
+
+#0a1128
+#001f54
+#034078
+#1282a2
+#fefcfb
+
+********/
+
+/****** Base Elements *******/
+
+* {
+  box-sizing: border-box;
+  line-height: 1.5em;
+}
+
+html {
+  color: white;
+}
+
+h1 {
+  margin-top: 0;
+}
+
+.headings {
+  text-align: center;
+  text-transform: uppercase;
+  padding-top: 10px;
+}
+
+/****** Containers *******/
+
+.main-header {
+  background-color: #4266A8;
+}
+
+.container {
+  /* margin-left: 1em;
+  margin-right: 1em; */
+  /* height: calc(100vh - 36px); */
+}
+
+.about-me-container {
+  background-color: #A4B1F0;
+}
+
+.text, .project, .contact-me-container {
+  padding-left: 1em;
+  padding-right: 1em;
+  padding-bottom: 1em;
+}
+
+/****** Navigation *******/
+
+.main-nav {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.nav-links {
+  padding: 10px 0;
+}
+
+.main-nav li {
+  text-align: center;
+  background-color: red;
+  padding: 10px;
+  margin-top: 5px;
+}
+
+.main-nav a {
+  color: #fff;
+  display: block;
+}
+
+.back-to-top {
+  text-decoration: underline;
+  font-size: .8em;
+  color: red;
+  padding-left: 5px;
+}
+
+.back-to-top a {
+  margin-left: 10px;
+  color: red;
+}
+
+/****** Intro Banner *******/
+
+.intro-banner {
+  background-image: url("../img/beachBackground.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 400px;
+}
+
+.my-picture-container {
+  margin: 0 auto;
+}
+
+.my-picture {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  padding-top: 10px;
+  display: block;
+  margin: 0 auto;
+}
+
+.my-name {
+  text-align: center;
+  color: black;
+}
+
+/****** About Me *******/
+
+.skillsets {
+  text-align: center;
+}
+
+.skillsets li {
+  display: inline;
+  padding: 10px;
+  color: maroon;
+}
+
+.skill-text {
+  margin-left: 5px;
+}
+
+.fab {
+  padding-right: 5px;
+}
+
+.skyline {
+  text-align: center;
+}
+
+.portland-skyline {
+  width: 300px;
+  height: 200px;
+  /* float: right; */
+  /* padding-left: 10px; */
+}
+
+/****** Projects *******/
+
+.my-projects-container {
+  background-color: #1282a2;
+  padding-bottom: 10px;
+}
+
+.project {
+  border: 1px solid black;
+  width: 80%;
+  margin: 10px auto;
+}
+
+.project-img {
+  width: 200px;
+  height: 200px;
+  display: block;
+  margin: 0 auto;
+  padding-top: 20px;
+}
+
+.project-name {
+  text-align: center;
+  color: black;
+  font-weight: bold;
+  text-decoration: underline;
+  text-transform: uppercase;
+}
+
+.project-description {
+  padding: 0 1em;
+}
+
+/****** Contact Me *******/
+
+.contact-me-container {
+  background-color: #001f54;
+  margin: 0;
+}
+
+.contact-me-form {
+  border: 1px solid red;
+  text-align: center;
+  background-color: #fff;
+  color: #000;
+  padding: 10px;
+}
+
+.contact-text {
+  font-weight: bold;
+}
+
+.contact-me-form input {
+  width: 300px;
+  margin-bottom: 15px;
+}
+
+textarea {
+  width: 300px;
+}
+
+.submit-button {
+  background-color: teal;
+  padding: 5px;
+  width: 200px;
+}
+
+/****** Footer *******/
+
+footer {
+  background-color: black;
+  padding-right: 1em;
+  padding-left: 1em;
+}
+
+.copyright-text {
+  text-align: center;
+  display: inline-block;
+  padding-top: 6px;
+}
+
+.copyright-text a {
+  color: red;
+  font-size: 1em;
+}
+
+.social-media {
+  display: inline;
+  float: right;
+}
+
+.social-media a {
+  color: white;
+  margin-right: 10px;
+}
+
+.social-media .fab {
+  background-color: red;
+}
+
+/***** Clear Fix *****/
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* =================================
+  Media Queries
+==================================== */
+
+@media (min-width: 769px) {
+  
+}

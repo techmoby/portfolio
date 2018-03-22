@@ -1,0 +1,220 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  line-height: 1.2em;
+  font-family: helvetica, sans-serif;
+}
+
+.heading, .project-name {
+  text-align: center;
+  text-decoration: underline;
+  padding: 20px 0;
+}
+
+section, .projects-container {
+  padding: 0 10px;
+}
+
+h1,
+h2 {
+  color: #444;
+}
+
+.back-to-top {
+  text-decoration: underline;
+  font-size: .8em;
+  color: red;
+
+  padding: 5px 0 5px;
+}
+
+.back-to-top a {
+  margin-left: 10px;
+  color: red;
+}
+
+/**** Nav Bar ****/
+
+nav ul {
+  background-color: #444;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+}
+
+nav ul li {
+  text-decoration: none;
+  text-align: center;
+}
+
+nav ul li a {
+  color: #f9f9f9;
+  display: block;
+  padding: 5px;
+}
+
+nav ul a:hover {
+  background: rgba(0, 0, 0, .4);
+}
+
+/**** Header ****/
+
+.main-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-wrap: wrap;
+  text-align: center;
+  padding: 10px;
+}
+
+.profile-picture {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  margin-top: 10px;
+  display: block;
+  margin: 10px auto;
+}
+
+#tagline {
+  color: teal;
+}
+
+#ready {
+  margin-top: 10px;
+  font-size: 1.1em;
+}
+
+#contact-me-button {
+  margin-top: 10px;
+}
+
+#contact-me-button button {
+  padding: 10px;
+  border-radius: 5px;
+  background-color: red;
+}
+
+/**** About Me ****/
+
+.about-me, .contact-me {
+  background-color: darkgray;
+}
+
+.portland-skyline {
+  width: 300px;
+  height: 300px;
+  display: block;
+  margin: 20px auto;
+}
+
+.about-me p {
+  margin-top: 10px;
+  padding: 0 10px;
+}
+
+.skillsets {
+  text-align: center;
+  margin-top: 10px;
+  padding-bottom: 10px;
+}
+
+.skillsets li {
+  display: inline;
+  padding: 10px;
+  color: maroon;
+}
+
+.skill-text {
+  margin-left: 5px;
+}
+
+.fab {
+  padding-right: 5px;
+}
+
+.icons {
+  width: 75px;
+  height: 75px;
+}
+
+/**** Projects ****/
+
+.projects-container {
+  /* border: 2px solid black; */
+}
+
+.project-image {
+  width: 300px;
+  height: 300px;
+  display: block;
+  margin: 20px auto;
+}
+
+
+
+/**** Contact ****/
+
+.contact-me-form {
+  text-align: center;
+}
+
+.contact-me-form input[type=text], .contact-me-form textarea {
+  width: 350px;
+  padding-bottom: 10px;
+}
+
+.contact-me-form label {
+  display: inline-block;
+  margin: 10px 0;
+  font-weight: bold;
+}
+
+.submit-button {
+  background-color: red;
+  padding: 5px;
+  width: 100px;
+  border-radius: 5px;
+  margin: 10px 0;
+}
+
+/***** Footer *****/
+
+.footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+#my-name {
+  font-size: .8em;
+  color: red;
+}
+
+/**** Media Queries ****/
+
+@media only screen and (min-width: 768px) {
+  nav ul {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  .projects-container {
+    display: flex;
+    /* flex-direction: row; */
+    justify-content: space-between;
+  }
+
+  .col {
+    border: 2px solid black;
+    padding: 0 10px 20px 10px;
+    margin-right: 10px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .back-to-top {
+    display: none;
+  }
+}
