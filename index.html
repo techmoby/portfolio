@@ -25,14 +25,14 @@
   <!-- Header -->
 
   <header class="main-header">
-    <img class="profile-picture" src="../img/techmoby-picture.jpg" alt="Picture of Jon Bascos">
+    <img class="profile-picture" src="img/techmoby-picture.jpg" alt="Picture of Jon Bascos">
     <h1>Hi!  My Name is Jon Bascos!</h1>
     <h2><span id="tagline">Self-taught Web Developer and Self-Proclaimed Techie</span></h2>
     <p id="ready">
       Looking for a company that is willing to take a chance on an ambitious, driven and ready to learn self-taught web developer who is willing to grow with the company.
     </p>
     <p id="contact-me-button">
-      <a href="#contact"><button>Contact Me</button></a>
+      <a href="#contact"><button>Hire Me</button></a>
     </p>
   </header>
 
@@ -40,7 +40,7 @@
 
   <section class="about-me">
     <h1 class="heading" id="about-me">About Me</h1>
-    <img class="portland-skyline" src="../img/portland-skyline.jpg" alt="Picture of the Portland Oregon Skyline at night.">
+    <img class="portland-skyline" src="img/portland-skyline.jpg" alt="Picture of the Portland Oregon Skyline at night.">
 
     <p>I am located in the "Silicon Forest" (Portland, Oregon) but originally from the Silicon Valley (San Jose, California). I moved here in 2005 and love it, but I do get my California fix during the holidays and the Summer time.</p>
 
@@ -56,8 +56,8 @@
       <ul>
         <!-- <li><i class="fab fa-html5"></i><span class="skill-text">HTML</span></li>
         <li><i class="fab fa-css3-alt"></i><span class="skill-text">CSS3</span></li> -->
-        <li><img src="../img/htmlIcon.png" alt="HTML Icon" class="icons"></li>
-        <li><img src="../img/cssIcon.png" alt="CSS Icon" class="icons"></li>
+        <li><img src="img/htmlIcon.png" alt="HTML Icon" class="icons"></li>
+        <li><img src="img/cssIcon.png" alt="CSS Icon" class="icons"></li>
       </ul>
     </div>
     <div class="back-to-top">
@@ -72,30 +72,30 @@
 
     <div class="projects-container">
       <div class="col">
-        <img src="../img/project-placeholder.jpg" alt="Project Placeholder Image" class="project-image">
+        <img src="img/project-placeholder.jpg" alt="Project Placeholder Image" class="project-image">
         <h2 class="project-name">Project Name Here 1</h2>
         <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto consequatur laboriosam excepturi, deleniti officiis maiores vitae rerum vel voluptas, provident ducimus a cupiditate, perferendis aperiam sit error aliquam. Expedita, minus.</div>
         <div>Quas impedit, eos? Repudiandae doloremque sunt, ad quasi vero iste sint aut ex cupiditate nam! Quas officiis aperiam, voluptatibus nostrum harum illo, repellat ad nihil. Ratione incidunt, molestias deserunt impedit.</div>
       </div>
 
       <div class="col">
-        <img src="../img/project-placeholder.jpg" alt="Project Placeholder Image" class="project-image">
+        <img src="img/project-placeholder.jpg" alt="Project Placeholder Image" class="project-image">
         <h2 class="project-name">Project Name Here 2</h2>
         <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto consequatur laboriosam excepturi, deleniti officiis maiores vitae rerum vel voluptas, provident ducimus a cupiditate, perferendis aperiam sit error aliquam. Expedita, minus.</div>
         <div>Quas impedit, eos? Repudiandae doloremque sunt, ad quasi vero iste sint aut ex cupiditate nam! Quas officiis aperiam, voluptatibus nostrum harum illo, repellat ad nihil. Ratione incidunt, molestias deserunt impedit.</div>
       </div>
 
       <div class="col">
-        <img src="../img/project-placeholder.jpg" alt="Project Placeholder Image" class="project-image">
+        <img src="img/project-placeholder.jpg" alt="Project Placeholder Image" class="project-image">
         <h2 class="project-name">Project Name Here 3</h2>
         <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto consequatur laboriosam excepturi, deleniti officiis maiores vitae rerum vel voluptas, provident ducimus a cupiditate, perferendis aperiam sit error aliquam. Expedita, minus.</div>
         <div>Quas impedit, eos? Repudiandae doloremque sunt, ad quasi vero iste sint aut ex cupiditate nam! Quas officiis aperiam, voluptatibus nostrum harum illo, repellat ad nihil. Ratione incidunt, molestias deserunt impedit.</div>
       </div>
     </div>
     <p>
-    <div class="back-to-top">
-      <i class="fas fa-angle-up fa-xs"></i><a href="#">Back to the top</a>
-    </div>
+      <div class="back-to-top">
+        <i class="fas fa-angle-up fa-xs"></i><a href="#">Back to the top</a>
+      </div>
   </section>
 
   <!-- Contact Me -->
@@ -103,22 +103,35 @@
   <section class="contact-me">
     <h1 class="heading" id="contact">Contact Me</h1>
     <div class="contact-me-container">
-      <form method="post" action="messageForm.php" class="contact-me-form">
-        <span class="contact-text">If you would like to get in contact with me, you can reach me by filling out the form with your information.</span>
+      <form method="post" action="acknowledge.php" class="contact-me-form">
+        <span class="contact-text">If you would like to get in contact with me about a project or employment, you can reach me by filling out the form with your information.</span>
         <br>
-        <label for="fname">First Name</label><br>
-        <input type="text" id="fname" name="firstname" placeholder="Your First Name" required>
-        <br>
-        <label for="lname">Last Name</label><br>
-        <input type="text" id="lname" name="lastname" placeholder="Your Last Name" required>
-        <br>
-        <label for="email">Email Address</label><br>
-        <input type="text" id="email" placeholder="Your Email Address" required>
-        <br>
-        <label for="message">Message</label><br>
-        <textarea type="message" name="message" rows="10" placeholder="Your Message"></textarea>
-        <br>
-        <input type="submit" value="Submit" class="submit-button">
+
+        <fieldset>
+          <legend>
+            <span class="steps">1</span>Basic Info
+          </legend>
+          <label for="fullname">Full Name</label><br>
+          <input type="text" id="fullname" name="fullname" placeholder="Your Full Name" required>
+          <br>
+          <label for="email">Email Address</label><br>
+          <input type="text" id="email" name="email" placeholder="Your Email Address" required>
+          <br>
+          <label for="url">Website Address</label><br>
+          <input type="text" id="url" name="url" placeholder="Your Website Address (optional)">
+          <br>
+        </fieldset>
+
+        <fieldset>
+          <legend><span class="steps">2</span>Subject and Message</legend>
+          <label for="subject">Subject</label><br>
+          <input type="text" id="subject" name="subject" placeholder="Subject of the Email" required>
+          <br>
+          <label for="message">Message</label><br>
+          <textarea type="message" name="message" id="message" rows="10" placeholder="Your Message"></textarea>
+          <br>
+        </fieldset>
+        <input type="submit" value="Submit" name="submit" class="submit-button">
       </form>
     </div>
   </section>
@@ -132,7 +145,6 @@
       <a href="https://www.github.com/techmoby" target="_blank"><i class="fab fa-github-alt fa-sm"></i></a>
     </div>
   </section>
-
 </body>
 
 </html>
