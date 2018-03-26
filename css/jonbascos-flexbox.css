@@ -95,6 +95,9 @@ nav ul a:hover {
   padding: 10px;
   border-radius: 5px;
   background-color: red;
+  border: 1px solid;
+  padding: 10px;
+  box-shadow: 5px 10px #888888;
 }
 
 /**** About Me ****/
@@ -143,7 +146,8 @@ nav ul a:hover {
 /**** Projects ****/
 
 .projects-container {
-  /* border: 2px solid black; */
+  width: 90%;
+  margin: 0 auto;
 }
 
 .project-image {
@@ -156,6 +160,29 @@ nav ul a:hover {
 
 
 /**** Contact ****/
+
+fieldset {
+  border: none;
+  margin-bottom: 20px;
+}
+
+legend {
+  font-weight: bold;
+  text-decoration: underline;
+  text-transform: uppercase;
+}
+
+.steps {
+  background-color: green;
+  display: inline-block;
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  margin-right: 3px;
+  font-size: 1.2em;
+  line-height: 30px;
+  text-align: center;
+}
 
 .contact-me-form {
   text-align: center;
@@ -204,6 +231,7 @@ nav ul a:hover {
     display: flex;
     /* flex-direction: row; */
     justify-content: space-between;
+
   }
 
   .col {
@@ -211,6 +239,7 @@ nav ul a:hover {
     padding: 0 10px 20px 10px;
     margin-right: 10px;
     display: flex;
+    flex: 1;
     flex-direction: column;
   }
 
